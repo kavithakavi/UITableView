@@ -78,8 +78,6 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Fetch a cell of the appropriate type.
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTypeIdentifier", for: indexPath)
-        
-        // Configure the cell’s contents.s
         cell.textLabel!.text = "Title : \(courseList[indexPath.row].name) \n \n No.of lessons : \(courseList[indexPath.row].numberOfLessons)"
         cell.textLabel?.numberOfLines = 0
         
